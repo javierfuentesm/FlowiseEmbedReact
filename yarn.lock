@@ -2252,24 +2252,9 @@ flatted@^3.2.7:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
 
-"flowise-embed@github:javierfuentesm/FlowiseChatEmbed":
+"flowise-embed@git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#main":
   version "2.0.6"
-  resolved "https://codeload.github.com/javierfuentesm/FlowiseChatEmbed/tar.gz/bfddf5f55f6e9c1b9bc041e21868d1ae04968518"
-  dependencies:
-    "@babel/core" "^7.22.1"
-    "@microsoft/fetch-event-source" "^2.0.1"
-    "@ts-stack/markdown" "^1.4.0"
-    device-detector-js "^3.0.3"
-    lodash "^4.17.21"
-    prettier "^3.1.0"
-    solid-element "1.7.0"
-    solid-js "1.7.1"
-    zod "^3.22.4"
-
-flowise-embed@latest:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/flowise-embed/-/flowise-embed-2.0.6.tgz#e07fcd553a805e77c7985bd18fe1e25636eb39dd"
-  integrity sha512-aMO7HNo/CCeZD8UNO5Y/il3ASZe236j0b8RuezCtoK0MG9nkihs/OmZMNdTYoMCUNcVnBEuarK0STZ2a9gggVA==
+  resolved "git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#bfddf5f55f6e9c1b9bc041e21868d1ae04968518"
   dependencies:
     "@babel/core" "^7.22.1"
     "@microsoft/fetch-event-source" "^2.0.1"
