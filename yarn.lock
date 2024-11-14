@@ -1780,9 +1780,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.5.41:
-  version "1.5.58"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.58.tgz#d90bd7a04d9223dce4e72316e14492140ec9af40"
-  integrity sha512-al2l4r+24ZFL7WzyPTlyD0fC33LLzvxqLCwurtBibVPghRGO9hSTl+tis8t1kD7biPiH/en4U0I7o/nQbYeoVA==
+  version "1.5.59"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.59.tgz#220d48099bf51dfb804bbb2386592c16c232de38"
+  integrity sha512-faAXB6+gEbC8FsiRdpOXgOe4snP49YwjiXynEB8Mp7sUx80W5eN+BnnBHJ/F7eIeLzs+QBfDD40bJMm97oEFcw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2113,7 +2113,7 @@ flatted@^3.2.9:
 
 "flowise-embed@git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#main":
   version "2.0.6"
-  resolved "git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#5b73dd772763fb3b1740daf87f3fcb3e38f5ecbf"
+  resolved "git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#7c04e77d85816aa34c9a226d777d8110fb13b4ae"
   dependencies:
     "@babel/core" "^7.22.1"
     "@microsoft/fetch-event-source" "^2.0.1"
