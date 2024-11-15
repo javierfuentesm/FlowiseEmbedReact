@@ -2113,7 +2113,7 @@ flatted@^3.2.9:
 
 "flowise-embed@git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#main":
   version "2.0.6"
-  resolved "git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#133736b0cd042d63c903904254bcd5499fe81f10"
+  resolved "git+https://github.com/javierfuentesm/FlowiseChatEmbed.git#9c9fd02589efc799dc1f7bd89e668cb1d07205d7"
   dependencies:
     "@babel/core" "^7.22.1"
     "@microsoft/fetch-event-source" "^2.0.1"
