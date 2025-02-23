@@ -1,7 +1,10 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
-import type { BubbleProps } from 'flowise-embed'
+import { useEffect, useRef } from 'react'
+import type { BotProps } from 'flowise-embed'
 
-type Props = BubbleProps
+type Props = BotProps & {
+  style?: React.CSSProperties
+  className?: string
+}
 
 declare global {
   namespace JSX {
@@ -9,45 +12,26 @@ declare global {
       'flowise-fullchatbot-with-images': React.DetailedHTMLProps<
         React.HTMLAttributes<HTMLElement>,
         HTMLElement
-      >
+      > & { class?: string }
     }
   }
 }
 
 type FullChatWithImagesElement = HTMLElement & Props
 
-export const FullChatWithImages = (props: Props) => {
+export const FullChatWithImages = ({ style, className, ...assignableProps }: Props) => {
   const ref = useRef<FullChatWithImagesElement | null>(null)
-  const [isInitialized, setIsInitialized] = useState(false)
 
   useEffect(() => {
     ;(async () => {
       await import('flowise-embed/dist/web.js')
-      setIsInitialized(true)
     })()
-    return () => {
-      ref.current?.remove()
-    }
-  }, [])
-
-  const attachFullChatToDom = useCallback((props: Props) => {
-    const fullChatElement = document.createElement(
-      'flowise-fullchatbot-with-images'
-    ) as FullChatWithImagesElement
-    ref.current = fullChatElement
-    injectPropsToElement(ref.current, props)
-    document.body.append(ref.current)
   }, [])
 
   useEffect(() => {
-    if (!isInitialized) return
-    if (!ref.current) attachFullChatToDom(props)
-    injectPropsToElement(ref.current as FullChatWithImagesElement, props)
-  }, [attachFullChatToDom, isInitialized, props])
+    if (!ref.current) return
+    Object.assign(ref.current, assignableProps)
+  }, [assignableProps])
 
-  const injectPropsToElement = (element: FullChatWithImagesElement, props: Props) => {
-    Object.assign(element, props)
-  }
-
-  return null
+  return <flowise-fullchatbot-with-images ref={ref} style={style} class={className} />
 } 
